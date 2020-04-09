@@ -1,0 +1,674 @@
+<!-- 사이드바 -->
+
+<!-- start custom footer snippets -->
+<!--Javscript -->
+<!-- AnchorJS script-->
+<script>
+  anchors.add(".anchored");
+  anchors.add("#main > div h2  a");
+</script>
+<!-- AnchorJS script-->
+<!--sidebar color jQuery-->
+<script>
+  $(".sidebar").mouseover(function () {
+    $('.reactIcon').css({
+      color: "deepskyblue"
+    });
+    $('.cssIcon').css({
+      color: "forestgreen"
+    });
+    $('.itIcon').css({
+      color: "deeppink"
+    });
+    $('.javascriptIcon').css({
+      color: "#ff7f50"
+    });
+    $('.jekyllIcon').css({
+      color: "orangered"
+    });
+    $('.markdownIcon').css({
+      color: "navy"
+    });
+    $('.pythonIcon').css({
+      color: "gold"
+    });
+    $('.webhackingIcon').css({
+      color: "darkgray"
+    });
+    $('.koreaIcon').css({
+      color: "mediumorchid"
+    });
+    $('.programersIcon').css({
+      color: "cornflowerblue"
+    });
+    $('.icon').css({
+      transition: "all 1s"
+    });
+  })
+
+  $(".sidebar").mouseout(function () {
+    $('.icon').css({
+      transition: "all 1s",
+      color: "#32859e"
+    });
+  })
+</script>
+<!--sidebar color jQuery-->
+<!--Javscript -->
+
+<!-- CSS -->
+<!-- Main CSS -->
+<style>
+  .page__content h1,
+  .page__content h2 {
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #89ddff;
+  }
+
+  p {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .page h1:before {
+    padding-right: 0.3em;
+    color: #9ddcff;
+    content: "/";
+  }
+
+  .page h2:before {
+    padding-right: 0.3em;
+    color: #9ddcff;
+    content: "//";
+  }
+
+  .page h3:before {
+    padding-right: 0.3em;
+    color: #9ddcff;
+    content: "///";
+  }
+
+  .page h4:before {
+    padding-right: 0.3em;
+    color: #9ddcff;
+    content: "////";
+  }
+
+  p>code,
+  a>code,
+  li>code,
+  figcaption>code,
+  td>code {
+    padding-left: 0.18rem;
+    padding-right: 0.18rem;
+    padding-top: 0.09rem;
+    font-size: 0.8em;
+    background: #fff;
+    color: #5283f3;
+    border: solid 1px #e1e4e5;
+    border-radius: 0px;
+    font-family: open sans, clear sans, helvetica neue, Helvetica, Arial,
+      sans-serif;
+    font-weight: bold;
+  }
+
+  blockquote {
+    font-style: normal;
+    border-left: 0.25em solid #266477;
+    background-color: rgba(165, 165, 165, 0.1);
+  }
+</style>
+<!-- Main CSS -->
+<!---Notice CSS-->
+<style>
+  .notice {
+    margin: 2em 0 !important;
+    padding: 1em;
+    color: #494e52;
+    font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
+      "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+    font-size: 0.75em !important;
+    text-indent: initial;
+    background-color: #f8f9f9;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(189, 193, 196, 0.25);
+  }
+
+  .notice--primary {
+    margin: 2em 0 !important;
+    padding: 1em;
+    color: #494e52;
+    font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
+      "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+    font-size: 0.75em !important;
+    text-indent: initial;
+    background-color: #f1f1f2;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(111, 119, 125, 0.25);
+  }
+
+  .notice--info {
+    margin: 2em 0 !important;
+    padding: 1em;
+    color: #494e52;
+    font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
+      "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+    font-size: 0.75em !important;
+    text-indent: initial;
+    background-color: #ebf5f8;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(59, 156, 186, 0.25);
+  }
+
+  .notice--warning {
+    margin: 2em 0 !important;
+    padding: 1em;
+    color: #494e52;
+    font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
+      "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+    font-size: 0.75em !important;
+    text-indent: initial;
+    background-color: #fbf2e6;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(214, 127, 5, 0.25);
+  }
+
+  .notice--success {
+    margin: 2em 0 !important;
+    padding: 1em;
+    color: #494e52;
+    font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
+      "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+    font-size: 0.75em !important;
+    text-indent: initial;
+    background-color: #ecf6ec;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(63, 166, 63, 0.25);
+  }
+
+  .notice--danger {
+    margin: 2em 0 !important;
+    padding: 1em;
+    color: #494e52;
+    font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
+      "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+    font-size: 0.75em !important;
+    text-indent: initial;
+    background-color: #fdefef;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(238, 95, 91, 0.25);
+  }
+</style>
+<!---Notice CSS-->
+<!-- Language label CSS -->
+<style>
+  .YAML {
+    pointer-events: none;
+    cursor: default;
+    display: inline;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 0.6em;
+    text-align: center;
+    background-color: #ff5050;
+    color: #f8fafc;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+
+  .YAMLVer {
+    pointer-events: none;
+    cursor: default;
+    display: inline;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 0.6em;
+    text-align: center;
+    background-color: #64b764;
+    color: #fff;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+
+  .Jekyll {
+    pointer-events: none;
+    cursor: default;
+    display: inline;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 0.6em;
+    text-align: center;
+    background-color: #c00;
+    color: #f8fafc;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+
+  .JekyllVer {
+    pointer-events: none;
+    cursor: default;
+    display: inline;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 0.6em;
+    text-align: center;
+    background-color: #343434;
+    color: #fff;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+
+  .MySQL {
+    pointer-events: none;
+    cursor: default;
+    display: inline;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 0.6em;
+    text-align: center;
+    background-color: #52809c;
+    color: #f8fafc;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    content: "MySQL";
+  }
+
+  .MySQLVer {
+    pointer-events: none;
+    cursor: default;
+    display: inline;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 0.6em;
+    text-align: center;
+    background-color: #f8981d;
+    color: #f8fafc;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+
+  .Javascript {
+    pointer-events: none;
+    cursor: default;
+    display: inline;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 0.6em;
+    text-align: center;
+    background-color: #f2e21b;
+    color: black;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+
+  .Javascriptver {
+    pointer-events: none;
+    cursor: default;
+    display: inline;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 0.6em;
+    text-align: center;
+    background-color: #000000c7;
+    color: #f8fafc;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+
+  .PHP {
+    pointer-events: none;
+    cursor: default;
+    display: inline;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 0.6em;
+    text-align: center;
+    background-color: #777bb3;
+    color: #f8fafc;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    content: "MySQL";
+  }
+
+  .PHPver {
+    pointer-events: none;
+    cursor: default;
+    display: inline;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 0.6em;
+    text-align: center;
+    background-color: #000000c7;
+    color: #f8fafc;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+
+  .Python {
+    pointer-events: none;
+    cursor: default;
+    display: inline;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 0.6em;
+    text-align: center;
+    background-color: #0277bd;
+    color: #f8fafc;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+
+  .PythonVer {
+    pointer-events: none;
+    cursor: default;
+    display: inline;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 0.6em;
+    text-align: center;
+    background-color: #ffc107;
+    color: #f8fafc;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+
+  .HTML {
+    pointer-events: none;
+    cursor: default;
+    display: inline;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 0.6em;
+    text-align: center;
+    background-color: #df4b25;
+    color: #fff;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+
+  .HTMLVer {
+    pointer-events: none;
+    cursor: default;
+    display: inline;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 0.6em;
+    text-align: center;
+    background-color: black;
+    color: #fff;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+
+  .CSS {
+    pointer-events: none;
+    cursor: default;
+    display: inline;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 0.6em;
+    text-align: center;
+    background-color: rgb(40, 164, 217);
+    color: #fff;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+
+  .CSSVer {
+    pointer-events: none;
+    cursor: default;
+    display: inline;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 0.6em;
+    text-align: center;
+    background-color: black;
+    color: #fff;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+
+  .Windows {
+    pointer-events: none;
+    cursor: default;
+    display: inline;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 0.6em;
+    text-align: center;
+    background-color: #00a8e8;
+    color: #fff;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+
+  .WindowsVer {
+    pointer-events: none;
+    cursor: default;
+    display: inline;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 0.6em;
+    text-align: center;
+    background-color: #ffe500;
+    color: #424242;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+
+  .Liquid {
+    pointer-events: none;
+    cursor: default;
+    display: inline;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 0.6em;
+    text-align: center;
+    background-color: #d60084;
+    color: #fff;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+
+  .LiquidVer {
+    pointer-events: none;
+    cursor: default;
+    display: inline;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 0.6em;
+    text-align: center;
+    background-color: #ffe500;
+    color: #424242;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+
+  .React {
+    pointer-events: none;
+    cursor: default;
+    display: inline;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 0.6em;
+    text-align: center;
+    background-color: #67ebff;
+    color: black;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+
+  .ReactVer {
+    pointer-events: none;
+    cursor: default;
+    display: inline;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 0.6em;
+    text-align: center;
+    background-color: #2a2c2e;
+    color: #fff;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+
+  .jQuery {
+    pointer-events: none;
+    cursor: default;
+    display: inline;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 0.6em;
+    text-align: center;
+    background-color: #1169ae;
+    color: white;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+
+  .jQueryVer {
+    pointer-events: none;
+    cursor: default;
+    display: inline;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 0.6em;
+    text-align: center;
+    background-color: #2a2c2e;
+    color: #fff;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+
+  .NodeJS {
+    pointer-events: none;
+    cursor: default;
+    display: inline;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 0.6em;
+    text-align: center;
+    background-color: #00b34a;
+    color: white;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+
+  .NodeJSVer {
+    pointer-events: none;
+    cursor: default;
+    display: inline;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 0.6em;
+    text-align: center;
+    background-color: #2a2c2e;
+    color: #fff;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+</style>
+<!-- Language label CSS -->
+<!-- Sidebar react CSS-->
+<style type="text/css" media="screen and (max-width: 1030px)">
+  .sidebar {
+    display: none
+  }
+</style>
+<!-- Sidebar react CSS-->
+<!-- code block (Syntax highlight)-->
+<style>
+  div.highlighter-rouge,
+  figure.highlight {
+    line-height: 150% !important;
+    font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;
+  }
+
+  .s2 {
+    color: #ffe300 !important
+  }
+
+  .highlight table td.gutter,
+  .highlight table td.rouge-gutter {
+    border-right: 2px solid #aeadadde !important
+  }
+
+  .kd {
+    color: #3ee9fb !important;
+  }
+
+  .k {
+    color: #d37cfb !important;
+  }
+
+  .nb {
+    color: white !important;
+  }
+
+  .c1 {
+    color: #b2ccd6 !important;
+  }
+
+  .nx {
+    color: #9dff82 !important;
+  }
+</style>
+<!-- code block (Syntax highlight)-->
+<!-- CSS -->
+<!-- end custom footer snippets -->

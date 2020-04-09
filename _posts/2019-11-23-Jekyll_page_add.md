@@ -1,0 +1,108 @@
+---
+title: "Jekyll 블로그(Minimal mistake)에 페이지 추가하기"
+date: 2019-11-23
+comments: true
+categories: "Jekyll"
+excerpt: "Github Jekyll 블로그(Minimal mistake)에 커스텀 페이지를 추가하자"
+author_profile: false
+header:
+    image: "https://raw.githubusercontent.com/ownit4137/ownit4137.github.io/master/_images/teaser/post/n3Duq8PH0y_head.jpg"
+    teaser: "https://raw.githubusercontent.com/ownit4137/ownit4137.github.io/master/_images/teaser/post/n3Duq8PH0y_teaser.jpg"
+toc: true 
+toc_label: "이번 포스트에서는 ..." 
+toc_icon: "chess-rook"
+toc_sticky: true
+---
+<!-- Page ID : n3Duq8PH0y -->
+<!--Language Button HTML -->
+
+<span><a class="HTML"><i class="fab fa-html5"></i> HTML</a><a class="HTMLVer">5</a></span>  <span><a class="CSS"><i class="fab fa-css3-alt"></i> CSS</a><a class="CSSVer">3</a></span>  <span><a class="Javascript"><i class="fab fa-js-square"></i> Javascript</a><a class="Javascriptver">ES8</a></span>  <span><a class="Windows"><i class="fab fa-windows"></i> Windows</a><a class="WindowsVer">10</a></span><br>  <span><a class="Jekyll"><i class="fab fa-github"></i> Jekyll</a><a class="JekyllVer">4.0.0</a></span>  <span><a class="Liquid"><i class="fas fa-flask"></i> Liquid</a><a class="LiquidVer">4.0.0</a></span>  <span><a class="YAML"><i class="fab fa-yammer"></i> YAML</a><a class="YAMLVer">1.2</a></span>
+
+<!--Language Button HTML -->
+<!-- Main content-->
+
+## 개요
+
+> Simple is the best
+
+처음 깃허브 Jekyll 블로그를 만들었을 땐  Minimal mistake라는 테마로 간단한 페이지를 구축했습니다. 화려하고 번잡한 UI 보다는 간단한 페이지를 추구했는데 사용하다보니 불편함, 커스터마이징의 필요성을 느끼게되었습니다. 
+지난 이틀간 블로그의 Category 페이지를 커스터마이즈 하기 위해서 구글링을 해본 결과 결국 Plugin 설치 등 번잡하고 복잡한 과정밖에 찾을 수 없었습니다. Windows 10 환경에서는 Ruby의 Gem이 오류를 출력하기 일쑤였고 Minimal mistake에 관한 대부분의 정보가 영어권의 사용자에게 맞추어져있어 원하는 정보를 정확하게 얻기 힘들었습니다. 스스로 삽질(?)하여 얻은 결과를 여기에 작성합니다. 
+
+이번 포스트에서는 지킬 블로그(Minimal mistake)에서 사용자가 새로운 블로그 페이지를 추가하는 방법에 대해서 설명합니다. 
+
+## 페이지 추가하고 작성하기
+
+[Category](https://ownit4137.github.io/categories/) 페이지를 만들 때, 사이트의 구조를 다음과 같이 구성하려고 했습니다.
+
+~~~
+사이트 메인 페이지 (../)
+ ┗ 카테고리 페이지(../Categories)
+   ┗ 카테고리 아이템(../Categories/IT, ../Categories/Python 등) - 카테고리 별 포스트
+~~~
+
+제 블로그 주소는 `https://ownit4137.github.io`입니다. `https://ownit4137.github.io/category`나 `https://ownit4137.github.io/category/Jekyll` 같은 **새로운 페이지를 어떻게 만드느냐**입니다. 지킬 블로그는 Liquid라는 언어와 YAML로 페이지를 웹페이지에 동적인 컨텐츠를 로드하고 있습니다. 이하의 내용을 간단히 요약하면 YAML로 페이지의 링크를 지정하고 Liquid로 페이지를 불러올 수 있습니다.
+
+### YAML 
+
+html 문서의 **최상단**에 다음과 같은 코드를 입력하고 `_pages` 폴더에 저장합니다.
+
+~~~
+---
+layout: "single"
+permalink: /test_page/
+title: "TEST"
+---
+<!-- 이하 HTML 컨텐츠--->
+<html>
+...
+~~~
+
+layout은 사이트의 레이아웃(div의 크기, 위치 등)을 미리 지정해둔 설정으로 변환시켜줍니다.
+{: .notice--info}
+
+위와 같이 **permalink**를 `/페이지 주소/`로 입력하면, `블로그 메인 주소/페이지 주소`[^1] 의 URL로 페이지가 생성되고 이하 HTML 컨텐츠 내용이 layout에 맞춰 페이지가 생성됩니다.
+
+아래는 위의 YAML 코드로 작성한 페이지가 성공적으로 생성된 결과입니다.
+![n3Duq8PH0y_1](https://i.imgur.com/S6eJakb.jpg)
+
+### Liquid
+
+페이지를 생성했다면, HTML 컨텐츠를 작성해야합니다. 하지만 Liquid 문법을 사용하면 HTML 페이지에 미리 작성된 HTML 페이지를 로드할 수 있습니다.
+
+`_includes` 폴더에 `import_page.html`이라는 이름으로 다음과 같은 html 파일을 하나 작성하였습니다.
+
+~~~html
+THIS IS TEST PAGE!
+~~~
+예시로 작성한 html 페이지입니다. `<html>`같은 태그는 없지만 있어도 로드하는데에는 문제없습니다.
+{: .notice--success}
+
+`_includes` 폴더에 저장된 html 파일을 다음과 같은 Liquid 문법을 통해 html 페이지에 로드할 수 있습니다.
+
+~~~html
+---
+layout: "single"
+permalink: /test_page/
+title: "TEST"
+---
+{% raw %}
+{% include import_page.html %}
+{% endraw %}
+~~~
+
+![n3Duq8PH0y_2](https://i.imgur.com/C37Oog9.jpg)
+
+## 마치며
+허둥지둥 포스트를 작성하다보니 정리가 안된 느낌이네요. 빠른 시일내에 YAML 작성법과 Liquid 문법에 관한 포스트를 게시해야겠습니다.
+
+
+
+<!-- Main content-->
+[^1]: https://ownit4137.github.io/test_page
+<!-- Javascript -->
+
+<!-- Javascript -->
+
+<!-- CSS -->
+
+<!-- CSS -->

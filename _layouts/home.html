@@ -1,0 +1,22 @@
+---
+layout: archive
+---
+
+<!-- 홈 화면 -->
+
+{{ content }}
+
+<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+
+
+{% for post in paginator.posts %}
+{% include archive-single.html %}
+{% endfor %}
+
+{% include paginator.html %}
+
+<style>
+    .sidebar.sticky {
+        margin-top: 23px;
+    }
+</style>

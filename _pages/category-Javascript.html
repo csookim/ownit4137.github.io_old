@@ -1,0 +1,41 @@
+---
+layout: default
+permalink: /categories/Javascript
+title: "Javascript"
+author_profile: false
+---
+<div class="page__hero--overlay">
+    <div class="wrapper" style='color:black'>
+        <h1><i class="fab fa-js" style="color:#f0d81d"></i> Post by Javascript</h1>
+        <p class="categoryDescription">Javascript에 관련된 포스트들을 게시하고 있습니다.</p>
+    </div>
+</div>
+
+<style>
+    .page__hero--overlay {
+        background-image: url('https://raw.githubusercontent.com/ownit4137/ownit4137.github.io/master/assets/images/categoryHead/Javascript.png');
+    }
+</style>
+
+<div id="main" role="main">
+    {% include ownit-sidebar.html %}
+    <div class="archive">
+        {% comment %}{% comment %} Page title {% endcomment %}
+        <h1><i class="fab fa-js-square" style="color: coral;"></i> Post by Javascript</h1>
+        <p style="font-size: 13px;">Javascript에 관련된 포스트들을 게시하고 있습니다.</p>
+        {% comment %} Page title {% endcomment %}{% endcomment %}
+
+        {% comment %} Main content {% endcomment %}
+        {% include group-by-array collection=site.posts field="categories" %}
+        {% for category in group_names %}
+        {% if category == "Javascript" %}
+        {% assign posts = group_items[forloop.index0] %}
+        <h2 id="{{ category | slugify }}" class="archive__subtitle">{{ category }}</h2>
+        {% for post in posts %}
+        {% include archive-single.html %}
+        {% endfor %}
+        {% endif %}
+        {% endfor %}
+        {% comment %} Main content {% endcomment %}
+    </div>
+</div>

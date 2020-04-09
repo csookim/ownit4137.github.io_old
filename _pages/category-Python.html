@@ -1,0 +1,41 @@
+---
+layout: default
+permalink: /categories/Python
+title: "Python"
+author_profile: false
+---
+
+<div class="page__hero--overlay" style="color: black">
+    <div class="wrapper">
+        <h1><i class="fab fa-python" style="color: gold;"></i> Post by Python</h1>
+        <p class="categoryDescription" style="color:rgb(35,35,35)">Python에 관련된 포스트들을 게시하고 있습니다.</p>
+    </div>
+</div>
+<style>
+    .page__hero--overlay {
+        background-image: url('https://raw.githubusercontent.com/ownit4137/ownit4137.github.io/master/assets/images/categoryHead/Python.png');
+    }
+</style>
+
+<div id="main" role="main">
+    {% include ownit-sidebar.html %}
+    <div class="archive">
+        {% comment %}{% comment %} Page title {% endcomment %}
+        <h1><i class="fab fa-python" style="color: gold;"></i> Post by Python</h1>
+        <p style="font-size: 13px;">Python에 관련된 포스트들을 게시하고 있습니다.</p>
+        {% comment %} Page title {% endcomment %}{% endcomment %}
+
+        {% comment %} Main content {% endcomment %}
+        {% include group-by-array collection=site.posts field="categories" %}
+        {% for category in group_names %}
+        {% if category == "Python" %}
+        {% assign posts = group_items[forloop.index0] %}
+        <h2 id="{{ category | slugify }}" class="archive__subtitle">{{ category }}</h2>
+        {% for post in posts %}
+        {% include archive-single.html %}
+        {% endfor %}
+        {% endif %}
+        {% endfor %}
+        {% comment %} Main content {% endcomment %}
+    </div>
+</div>

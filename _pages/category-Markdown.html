@@ -1,0 +1,34 @@
+---
+layout: default
+permalink: /categories/Markdown
+title: "Markdown"
+author_profile: false
+---
+<div class="page__hero--overlay">
+    <div class="wrapper">
+        <h1><i class="fab fa-markdown" style="color: navy;"></i> Post by Markdown</h1>
+        <p class="categoryDescription">Markdown에 관련된 포스트들을 게시하고 있습니다.</p>
+    </div>
+</div>
+
+<div id="main" role="main">
+    {% include ownit-sidebar.html %}
+    <div class="archive">
+        {% comment %}{% comment %} Page title {% endcomment %}
+        <h1><i class="fab fa-markdown" style="color: navy;"></i> Post by Markdown</h1>
+        {% comment %} Page title {% endcomment %}{% endcomment %}
+
+        {% comment %} Main content {% endcomment %}
+        {% include group-by-array collection=site.posts field="categories" %}
+        {% for category in group_names %}
+        {% if category == "Markdown" %}
+        {% assign posts = group_items[forloop.index0] %}
+        <h2 id="{{ category | slugify }}" class="archive__subtitle">{{ category }}</h2>
+        {% for post in posts %}
+        {% include archive-single.html %}
+        {% endfor %}
+        {% endif %}
+        {% endfor %}
+        {% comment %} Main content {% endcomment %}
+    </div>
+</div>
