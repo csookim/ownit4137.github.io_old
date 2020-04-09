@@ -11,8 +11,8 @@ header:  # 헤더에 유튜브 비디오 삽입
         id: xGaQTlO43aQ
         # Youtube ID, ?v= 이후의 문자열
         provider: youtube
-    image: /assets/images/camera.jpeg  # 글 위의 이미지
-    teaser: "assets/images/Jekyll.jpg"   # 작은 글일때의 이미지
+    image: "/home.jpg"  # 글 위의 이미지
+    teaser: "/home.jpg"   # 작은 글일때의 이미지
 
 toc: true #Table Of Contents 목차 보여줌
 toc_label: "목차" # toc 이름 정의
