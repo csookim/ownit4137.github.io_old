@@ -4,7 +4,7 @@ minimal_mistakes_skin: "default" # "default" "air", "aqua", "contrast", "dark", 
 
 # Site Settings
 locale: "en-US"
-title: "Hi"
+title: "Own1t"
 title_separator: "-"
 subtitle:  # site tagline that appears below site title in masthead
 name: "Ownit"
@@ -12,9 +12,9 @@ description: "Hi"
 url: "https://ownit4137.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl: "" # the subpath of your site, e.g. "/blog"
 repository: "ownit4137/ownit4137.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser: /assets/images/main/teaser.svg # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser: /assets/icon/site-logo.png # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # teaser can be overriden by post teaser
-logo: /assets/icon/site-logo.svg # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo: /assets/icon/site-logo.png # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title: # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute: 200 # 줄당 글자 수
@@ -67,7 +67,7 @@ reCaptcha:
   secret:
 atom_feed:
   path: # blank (default) uses feed.xml
-search: true # true, false (default)
+search: false # true, false (default)
 search_full_content: # true, false (default)
 search_provider: # lunr (default), algolia, google
 algolia:
