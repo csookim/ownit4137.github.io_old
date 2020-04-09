@@ -6,7 +6,7 @@ excerpt: "YAML front matter로 지킬블로그, Minimal Mistake의 포스트를 
 categories: "Jekyll"
 author_profile: false
 header:
-  image: "https://raw.githubusercontent.com/ownit4137/ownit4137.github.io/master/_images/post/Jekyll/3GuM2Rz2dX.jpg"
+  image: "https://raw.githubusercontent.com/TERADA-DANTE/TERADA-DANTE.github.io/master/_images/post/Jekyll/3GuM2Rz2dX.jpg"
   teaser: "assets/images/Jekyll.jpg"
 toc: true 
 toc_label: "이번 포스트에서는 ..." 
@@ -17,8 +17,8 @@ gallery:
     image_path: /assets/images/post/Jekyll/3GuM2Rz2dX_1.jpg
     alt: "3GuM2Rz2dX_1"
     title: "바다"
-  - url: "https://raw.githubusercontent.com/ownit4137/ownit4137.github.io/master/_images/post/Jekyll/3GuM2Rz2dX_2.jpg"
-    image_path: "https://raw.githubusercontent.com/ownit4137/ownit4137.github.io/master/_images/post/Jekyll/3GuM2Rz2dX_2.jpg"
+  - url: "https://raw.githubusercontent.com/TERADA-DANTE/TERADA-DANTE.github.io/master/_images/post/Jekyll/3GuM2Rz2dX_2.jpg"
+    image_path: "https://raw.githubusercontent.com/TERADA-DANTE/TERADA-DANTE.github.io/master/_images/post/Jekyll/3GuM2Rz2dX_2.jpg"
     alt: "3GuM2Rz2dX_2"
     title: "하늘"
 ---
@@ -114,7 +114,7 @@ toc_sticky: true
 `image` 속성과 `teaser` 속성은 `header` 속성 내부에서 선언됩니다.
 ~~~yaml
 header:
-   image: "https://raw.githubusercontent.com/ownit4137/ownit4137.github.io/master/_images/post/Jekyll/3GuM2Rz2dX.jpg"
+   image: "https://raw.githubusercontent.com/TERADA-DANTE/TERADA-DANTE.github.io/master/_images/post/Jekyll/3GuM2Rz2dX.jpg"
    teaser: "assets/images/Jekyll.jpg"
 ~~~
 
@@ -133,8 +133,8 @@ gallery:
     image_path: "/assets/images/post/Jekyll/3GuM2Rz2dX_1.jpg"
     alt: "3GuM2Rz2dX_1"
     title: "바다"
-  - url: "https://raw.githubusercontent.com/ownit4137/ownit4137.github.io/master/_images/post/Jekyll/3GuM2Rz2dX_2.jpg"
-    image_path: "https://raw.githubusercontent.com/ownit4137/ownit4137.github.io/master/_images/post/Jekyll/3GuM2Rz2dX_2.jpg"
+  - url: "https://raw.githubusercontent.com/TERADA-DANTE/TERADA-DANTE.github.io/master/_images/post/Jekyll/3GuM2Rz2dX_2.jpg"
+    image_path: "https://raw.githubusercontent.com/TERADA-DANTE/TERADA-DANTE.github.io/master/_images/post/Jekyll/3GuM2Rz2dX_2.jpg"
     alt: "3GuM2Rz2dX_2"
     title: "하늘"
 ~~~

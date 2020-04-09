@@ -6,7 +6,7 @@ excerpt: "Liquid와 YAML front matter로 지킬블로그, Minimal Mistake의 포
 categories: "Jekyll"
 author_profile: false
 header:
-  image: "https://raw.githubusercontent.com/ownit4137/ownit4137.github.io/master/_images/post/Jekyll/3GuM2Rz2dX.jpg"
+  image: "https://raw.githubusercontent.com/TERADA-DANTE/TERADA-DANTE.github.io/master/_images/post/Jekyll/3GuM2Rz2dX.jpg"
   teaser: "assets/images/Jekyll.jpg"
 toc: true 
 toc_label: "이번 포스트에서는 ..." 
@@ -174,7 +174,7 @@ Figure라고 불리우는 이 기능은 하나의 이미지와 캡션을 제공�
 
 유튜브 이외에도 비메오, 구글 드라이브 등 다양한 provider 옵션을 제공합니다.
 
-특정 유튜브 동영상의 경우 게시가 불가능할 수 있습니다. 그럴땐 [이 방법](https://ownit4137.github.io/markdown/markdown03/#embedresponsively)을 사용하셔야합니다.
+특정 유튜브 동영상의 경우 게시가 불가능할 수 있습니다. 그럴땐 [이 방법](https://terada-dante.github.io/markdown/markdown03/#embedresponsively)을 사용하셔야합니다.
 {: .notice--success}
 
 <!-- Main content-->
