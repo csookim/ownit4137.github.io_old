@@ -2,7 +2,7 @@
 title: "SAMPLE PAGE"
 date: 2019-11-11
 categories: "Jekyll" # 카테고리
-excerpt: "YAML front matter로 지킬블로그, Minimal Mistake의 포스트를 작성해보자"
+excerpt: "TEST PAGE"
 published : true # 공개
 
 author_profile: false
@@ -61,8 +61,10 @@ money: true
 
 > Hello!
 
-## TEST 1
+# TEST 1
 ## TEST 2
+### TEST 3
+#### TEST 4
 <!-- Main content-->
 
 <!-- Javascript -->
