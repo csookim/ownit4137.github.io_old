@@ -7,17 +7,17 @@
   {%- when "lunr" -%}
   <form class="search-content__form" onkeydown="return event.key != 'Enter';">
     <label class="sr-only" for="search">
-      What to find 🔥
+      Search :)
     </label>
-    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="What to find 🔥" />
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Search :)" />
   </form>
   <div id="results" class="results"></div>
   {%- when "google" -%}
   <form onsubmit="return googleCustomSearchExecute();" id="cse-search-box-form-id">
     <label class="sr-only" for="cse-search-input-box-id">
-      {{ site.data.ui-text[site.locale].search_label_text | default: 'What to find 🔥' }}
+      {{ site.data.ui-text[site.locale].search_label_text | default: 'Search :)' }}
     </label>
-    <input type="search" id="cse-search-input-box-id" class="search-input" tabindex="-1" placeholder="{{ site.data.ui-text[site.locale].search_placeholder_text | default: 'What to find 🔥' }}" />
+    <input type="search" id="cse-search-input-box-id" class="search-input" tabindex="-1" placeholder="{{ site.data.ui-text[site.locale].search_placeholder_text | default: 'Search :)' }}" />
   </form>
   <div id="results" class="results">
     <gcse:searchresults-only></gcse:searchresults-only>
