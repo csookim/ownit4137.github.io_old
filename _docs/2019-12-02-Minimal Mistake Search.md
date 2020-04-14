@@ -3,11 +3,8 @@ title: "지킬블로그, Minimal Mistake 검색기능 추가하기"
 date: 2019-12-02
 comments: true
 excerpt: "블로그에 검색기능을 추가하자"
-categories: "Jekyll"
+categories: Markdown
 author_profile: false
-header:
-  image: "https://raw.githubusercontent.com/ownit4137/ownit4137.github.io/master/_images/post/Jekyll/3GuM2Rz2dX.jpg"
-  teaser: "assets/images/Jekyll.jpg"
 ---
 <!-- POST ID: L926rzqGa5 -->
 <!--Language Button HTML -->
@@ -19,7 +16,7 @@ header:
 
 ![L926rzqGa5_1](/assets/images/post/Jekyll/L926rzqGa5_1.png)
 
-search 속성을 true로 설청하면 간단히 검색버튼과 기능을 구현할 수 있습니다(Lunr). 
+search 속성을 true로 설청하면 간단히 검색버튼과 기능을 구현할 수 있습니다(Lunr).
 
 Minimal mistake 웹 페이지에 따르면 깃허브 페이지에 호스트 되는 사이트의 경우 검색기능은 기본적으로 Lunr에 100% 호환이 됩니다. 하지만, Algolia나 Google Custom Search Engine 사용자를 위한 설정 또한 존재합니다.
 

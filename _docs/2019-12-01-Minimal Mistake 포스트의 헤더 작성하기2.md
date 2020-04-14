@@ -3,13 +3,10 @@ title: "지킬블로그, Minimal Mistake 포스트 작성하기 - 2"
 date: 2019-12-01
 comments: true
 excerpt: "Liquid와 YAML front matter로 지킬블로그, Minimal Mistake의 포스트를 작성해보자"
-categories: "Jekyll"
+categories: Markdown
 author_profile: false
-header:
-  image: "https://raw.githubusercontent.com/TERADA-DANTE/TERADA-DANTE.github.io/master/_images/post/Jekyll/3GuM2Rz2dX.jpg"
-  teaser: "assets/images/Jekyll.jpg"
-toc: true 
-toc_label: "이번 포스트에서는 ..." 
+
+toc: true
 toc_icon: "chess-rook"
 toc_sticky: true
 food: Pizza
@@ -54,14 +51,14 @@ class 추가로 문자열을 정렬할 수 있습니다.
 {: .text-right}
 는 실제로 만난다면 정말 위험하겠죠?<br>
 ~~~
-Justify는 마지막 줄을 제외한 모든 줄이 
-개행에 관계없이 한 줄을 채우는 것을 말합니다. 
+Justify는 마지막 줄을 제외한 모든 줄이
+개행에 관계없이 한 줄을 채우는 것을 말합니다.
 좌측정렬과는 비슷하지만 자세히 보면 조금 다른 방식의 정렬입니다.
 {: .text-justify}
 ~~~
-Justify는 마지막 줄을 제외한 모든 줄이 
-개행에 관계없이 한 줄을 채우는 것을 말합니다. 
-좌측정렬과는 비슷하지만 자세히 보면 조금 다른 방식의 정렬입니다. 
+Justify는 마지막 줄을 제외한 모든 줄이
+개행에 관계없이 한 줄을 채우는 것을 말합니다.
+좌측정렬과는 비슷하지만 자세히 보면 조금 다른 방식의 정렬입니다.
 {: .text-justify}
 
 ### 이미지 정렬
@@ -84,14 +81,14 @@ Justify는 마지막 줄을 제외한 모든 줄이
 ~~~
 ![image-left](/assets/images/post/Jekyll/zV5KAlGEMt_2.jpg)
 {: .align-left}
-위의 코드는 어떨까요? 가끔씩 문단의 좌측이나 옆에 이미지를 위치시키고 싶을 때가 있습니다. 보시는대로 위와 같이 `{: .align-left}` class를 추가하시면 이미지를 문단의 좌측에 정렬할 수 있습니다. 이미지의 크기를 고려하여 포스트에 이미지를 멋지게 배치하는 것도 포스트를 작성할 때 고려해야 할 중요한 사항입니다. 
+위의 코드는 어떨까요? 가끔씩 문단의 좌측이나 옆에 이미지를 위치시키고 싶을 때가 있습니다. 보시는대로 위와 같이 `{: .align-left}` class를 추가하시면 이미지를 문단의 좌측에 정렬할 수 있습니다. 이미지의 크기를 고려하여 포스트에 이미지를 멋지게 배치하는 것도 포스트를 작성할 때 고려해야 할 중요한 사항입니다.
 ~~~markdown
 ![image-right](/assets/images/post/Jekyll/zV5KAlGEMt_3.jpg)
 {: .align-right}
 ~~~
 ![image-right](/assets/images/post/Jekyll/zV5KAlGEMt_3.jpg)
 {: .align-right}
-세번째는 `{: . align-right}` 입니다. 위처럼 작성된 마크다운은 이미지를 어떻게 정렬할까요? 
+세번째는 `{: . align-right}` 입니다. 위처럼 작성된 마크다운은 이미지를 어떻게 정렬할까요?
 
 우측에 정렬된 이미지는 좌측에 정렬된 이미지보다는 다소 크기가 크군요. 이상으로 이미지를 정렬하는 3가지 방법에 대해서 설명하였습니다.
 
@@ -117,7 +114,7 @@ money: true
 {% endfor %}
 </ul>
 {% if page.money %}
-I am rich! 
+I am rich!
 {% endif %}
 ~~~
 {% endraw %}
@@ -132,22 +129,22 @@ I am rich!
 </ul>
 {% if page.money %}
 
-I am rich! 
+I am rich!
 {% endif %}
 
 ### 이미지, 동영상 게시(Figure)
 마크다운에서는 `![이미지 이름](이미지 주소)`로 이미지를 게시할 수 있습니다. 하지만 Liquid로도 이미지와 동영상을 게시할 수 있습니다.
 {% raw %}
 ~~~
-{% include 
-    figure 
-    image_path="/assets/images/zV5KAlGEMt_3.jpg" 
-    alt="Figure image" 
-    caption="여기는 이미지 설명, caption입니다." 
+{% include
+    figure
+    image_path="/assets/images/zV5KAlGEMt_3.jpg"
+    alt="Figure image"
+    caption="여기는 이미지 설명, caption입니다."
     %}
 ~~~
 {% endraw %}
-Figure라고 불리우는 이 기능은 하나의 이미지와 캡션을 제공합니다. 속성은 다음과 같습니다. 
+Figure라고 불리우는 이 기능은 하나의 이미지와 캡션을 제공합니다. 속성은 다음과 같습니다.
 
 |     속성     |      설명       | Remark |
 | :--------: | :-----------: | :----: |
@@ -155,11 +152,11 @@ Figure라고 불리우는 이 기능은 하나의 이미지와 캡션을 제공�
 |    alt     | 이미지 사용 불가시 대체 |        |
 |  capation  |    이미지 설명     |        |
 
-{% include 
-    figure 
-    image_path="/assets/images/post/Jekyll/zV5KAlGEMt_4.jpg" 
-    alt="Figure image" 
-    caption="여기는 이미지 설명, caption입니다." 
+{% include
+    figure
+    image_path="/assets/images/post/Jekyll/zV5KAlGEMt_4.jpg"
+    alt="Figure image"
+    caption="여기는 이미지 설명, caption입니다."
     %}
 
 또한, 다음과 같이 Liquid 문법으로 마크다운 문서에 동영상을 게시할 수 도 있습니다.

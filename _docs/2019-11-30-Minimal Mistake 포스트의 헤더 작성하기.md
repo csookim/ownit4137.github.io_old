@@ -3,24 +3,12 @@ title: "지킬블로그, Minimal Mistake 포스트 작성하기 - 1"
 date: 2019-11-30
 comments: true
 excerpt: "YAML front matter로 지킬블로그, Minimal Mistake의 포스트를 작성해보자"
-categories: "Jekyll"
+categories: Markdown
 author_profile: false
-header:
-  image: "https://raw.githubusercontent.com/TERADA-DANTE/TERADA-DANTE.github.io/master/_images/post/Jekyll/3GuM2Rz2dX.jpg"
-  teaser: "assets/images/Jekyll.jpg"
-toc: true 
-toc_label: "이번 포스트에서는 ..." 
+toc: true
 toc_icon: "chess-rook"
 toc_sticky: true
-gallery: 
-  - url: "/assets/images/post/Jekyll/3GuM2Rz2dX_1.jpg"
-    image_path: /assets/images/post/Jekyll/3GuM2Rz2dX_1.jpg
-    alt: "3GuM2Rz2dX_1"
-    title: "바다"
-  - url: "https://raw.githubusercontent.com/TERADA-DANTE/TERADA-DANTE.github.io/master/_images/post/Jekyll/3GuM2Rz2dX_2.jpg"
-    image_path: "https://raw.githubusercontent.com/TERADA-DANTE/TERADA-DANTE.github.io/master/_images/post/Jekyll/3GuM2Rz2dX_2.jpg"
-    alt: "3GuM2Rz2dX_2"
-    title: "하늘"
+
 ---
 <!-- POST ID: 3GuM2Rz2dX -->
 <!--Language Button HTML -->
@@ -29,7 +17,7 @@ gallery:
 <!-- Main content-->
 
 ## 개요
-블로그 플랫폼의 선택지는 다양합니다. 처음 블로그를 시작할 때는 네이버 블로그나 티스토리 등 편리하고 강력한 블로그가 가장 먼저 눈에 들어왔습니다. 하지만 유명 플랫폼을 선택하지 않고 깃허브의 정적 블로그 지킬(Jekyll)을 선택한 이유는 **확장성**에 있습니다. 내가 원하는 대로 블로그를 제작할 수 있다는 점이 가장 큰 매력이었죠. 하지만 포스팅을 할 때마다 수많은 귀찮은 작업들을 해야하는 것은 그리 생산적인 활동이 아닙니다. 
+블로그 플랫폼의 선택지는 다양합니다. 처음 블로그를 시작할 때는 네이버 블로그나 티스토리 등 편리하고 강력한 블로그가 가장 먼저 눈에 들어왔습니다. 하지만 유명 플랫폼을 선택하지 않고 깃허브의 정적 블로그 지킬(Jekyll)을 선택한 이유는 **확장성**에 있습니다. 내가 원하는 대로 블로그를 제작할 수 있다는 점이 가장 큰 매력이었죠. 하지만 포스팅을 할 때마다 수많은 귀찮은 작업들을 해야하는 것은 그리 생산적인 활동이 아닙니다.
 
 하지만 고맙게도 Minimal mistake 테마는 단 몇줄의 코드로 목차를 생성해주고, 헤더나 티저 이미지를 생성해주는 등 강력하고 편리한 기능을 제공하고 있습니다. 이번 포스트에서는 Minimal mistake 테마가 포스트를 작성할 때 제공하는 기능, **YAML front matter**에 대해서 설명합니다.
 
@@ -48,7 +36,7 @@ YAML front matter 코드
 YAML front matter 코드를 감싸는 - - -는 생략할 수 없습니다.
 {: .notice--danger}
 
-YAML front matter 코드는 기본적으로 `속성: 값`의 형태를 가집니다. 
+YAML front matter 코드는 기본적으로 `속성: 값`의 형태를 가집니다.
 
 ## YAML front matter
 ### 기본 요소
@@ -57,7 +45,7 @@ YAML front matter 코드는 기본적으로 `속성: 값`의 형태를 가집니
 
 ~~~yaml
 layout: default
-title: "Minimal Mistake 포스트의 헤더 작성하기" 
+title: "Minimal Mistake 포스트의 헤더 작성하기"
 date: 2019-11-30 12:39:40
 comments: true
 excerpt: "Minimal Mistake 포스트의 헤더 작성하기, YAML front matter"
@@ -97,8 +85,8 @@ categories: "category_a category_b"
 포스트의 `<h1>, <h2> ...`요소로 목차를 생성할 수 있습니다.
 
 ~~~yaml
-toc: true 
-toc_label: "이번 포스트에서는 ..." 
+toc: true
+toc_label: "이번 포스트에서는 ..."
 toc_icon: "chess-rook"
 toc_sticky: true
 ~~~
@@ -126,9 +114,9 @@ header:
 
 
 ### 이미지 갤러리
-이미지 갤러리를 사용하여 문서내부에서 이미지를 나열할 수 있습니다. 
+이미지 갤러리를 사용하여 문서내부에서 이미지를 나열할 수 있습니다.
 ~~~yaml
-gallery: 
+gallery:
   - url: "/assets/images/post/Jekyll/3GuM2Rz2dX_1.jpg"
     image_path: "/assets/images/post/Jekyll/3GuM2Rz2dX_1.jpg"
     alt: "3GuM2Rz2dX_1"
@@ -158,8 +146,8 @@ YAML front matter에 선언한 이미지 갤러리를 본문에서 다음과 같
 
 ### 기타
 ~~~yaml
-author_profile: false 
-read_time: true 
+author_profile: false
+read_time: true
 permalink: /Jekyll/
 ~~~
 
