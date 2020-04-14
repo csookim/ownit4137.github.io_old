@@ -1,7 +1,7 @@
 ---
 title: "SAMPLE PAGE"
 date: 2019-11-11
-categories: "Jekyll" # 카테고리
+categories: "webh" # 카테고리
 excerpt: "TEST PAGE"
 published : true # 공개
 
