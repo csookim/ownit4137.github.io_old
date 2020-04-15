@@ -148,8 +148,9 @@ author:
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
+    - label: "Previous Blog"
+      icon: "fas fa-archive"
+      url: "https://blog.naver.com/ownit4137"
       # url:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
