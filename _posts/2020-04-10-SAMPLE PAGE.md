@@ -1,6 +1,6 @@
 ---
 title: "SAMPLE PAGE"
-date:
+date: 2020-03-19
 categories: "webh" # 카테고리
 excerpt: "TEST PAGE"
 published : false # 공개
