@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /categories/ml
+permalink: /categories/machinelearning
 title: "Machine Learning"
 author_profile: false
 ---
@@ -23,7 +23,7 @@ author_profile: false
         {% comment %} Main content {% endcomment %}
         {% include group-by-array collection=site.posts field="categories" %}
         {% for category in group_names %}
-        {% if category == "Machine Learning" %}
+        {% if category == "MachineLearning" %}
         {% assign posts = group_items[forloop.index0] %}
         <h2 id="{{ category | slugify }}" class="archive__subtitle">{{ category }}</h2>
         {% for post in posts %}
