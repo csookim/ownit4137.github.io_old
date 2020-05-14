@@ -12,13 +12,6 @@ MathJax.Hub.Config({
   }
 });
 
-MathJax.Hub.Config({
-  TeX: {
-    Macros: {
-      '\\_': '_'
-    }
-  }
-});
 MathJax.Hub.Register.MessageHook("Math Processing Error",function (message) {
 	  alert("Math Processing Error: "+message[1]);
 	});
