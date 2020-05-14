@@ -1,28 +1,35 @@
 ---
 layout: default
-permalink: /categories/webh
-title: "webh"
+permalink: /categories/pwn
+title: "Pwnable"
 author_profile: false
 ---
 <div class="page__hero--overlay">
-    <div class="wrapper">
-        <h1><i class="fas fa-laptop-code" style="color:darkgray"></i> Posts about Webhacking</h1>
-        <p class="categoryDescription"> Web-application Hacking</p>
+    <div class="wrapper" style='color:black'>
+        <h1><i class="fab fa-ubuntu" style="color:teal"></i> Posts about Pwnable</h1>
+        <p class="categoryDescription"> System Hacking</p>
     </div>
 </div>
+<!--
+<style>
+    .page__hero--overlay {
+        background-image: url('https://raw.githubusercontent.com/ownit4137/ownit4137.github.io/master/assets/images/categoryHead/pwn.png');
+    }
+</style>
+-->
 
 <div id="main" role="main">
     {% include ownit-sidebar.html %}
     <div class="archive">
         {% comment %}{% comment %} Page title {% endcomment %}
-        <h1><i class="fas fa-laptop-code" style="color:darkgray"></i> Posts about Webhacking</h1>
-        <p style="font-size: 13px;"> Web-application Hacking</p>
+        <h1><i class="fab fa-ubuntu" style="color:teak;"></i> Posts about Pwnable</h1>
+        <p style="font-size: 13px;">System Hacking</p>
         {% comment %} Page title {% endcomment %}{% endcomment %}
 
         {% comment %} Main content {% endcomment %}
         {% include group-by-array collection=site.posts field="categories" %}
         {% for category in group_names %}
-        {% if category == "webh" %}
+        {% if category == "Pwnable" %}
         {% assign posts = group_items[forloop.index0] %}
         <h2 id="{{ category | slugify }}" class="archive__subtitle">{{ category }}</h2>
         {% for post in posts %}
