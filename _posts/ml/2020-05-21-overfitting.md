@@ -20,4 +20,4 @@ use_math: true
 
 # Overfitting
 
-halo
+![](assets/d0c21cb0.png)
