@@ -20,4 +20,6 @@ use_math: true
 
 # Overfitting
 
-![](assets/d0c21cb0.png)
+![a](assets/d0c21cb0.png)
+
+halo
