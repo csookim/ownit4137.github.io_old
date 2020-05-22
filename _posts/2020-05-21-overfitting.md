@@ -27,14 +27,14 @@ use_math: true
 
 ![of](/assets/posts/ml/overfit01.jpg)
 
-그래프 1
+**그래프 1**
   - Underfit, High bias
   - 그래프가 강한 편향을 가지고 있음(데이터의 분포와 거리가 먼 개형)
 
-그래프 2
+**그래프 2**
   - 그래프가 데이터를 적절히 표현
 
-그래프 3
+**그래프 3**
   - **Overfit** , High variance
   - 그래프의 변동성이 큼
   - 새로운 예제가 들어올 경우 일반화된 예측을 하지 못할 수 있음
@@ -43,10 +43,12 @@ use_math: true
 ## 해결 방안
 
 1. Reduce the number of features
+
 - 불필요한 feature($x_{i}$)을 제외시켜 개수를 줄임
 - Model selection algorithm 사용
 
 2. Regularization
+
 - 정규화를 통해 $\theta_{i}$의 범위를 줄임
 - feature의 개수를 줄일 필요가 없음
 
@@ -56,7 +58,7 @@ use_math: true
 - 비용 함수의 식에다 $\theta_{i}$와 관련된 식을 더해 주어 overfit을 줄일 수 있음
 - $J(\theta) = j(\theta) + \frac{ \lambda }{2m} \sum_{j=1}^n {\theta_{j}}^2 $
 - 미분의 편의를 위해 $2m$으로 나눠 줌
-- extra summation에 \theta_{0}은 포함되지 않음
+- extra summation에 $\theta_{0}$은 포함되지 않음
 - Learning rate $\alpha$와 유사하게 Regularization Parameter인 $\lambda$를 정해주어야 함
 
 
@@ -87,4 +89,4 @@ The $\lambda$ is regularization parameter. It determines how much the costs of o
 
 ### Gradient Descent
 
-![](/assets/posts/ml/dc0efbd3.png)
+![](/assets/posts/ml/dbb8100c.png)
