@@ -19,7 +19,3 @@ use_math: true
 > Machine Learning by Andrew Ng WEEK 3
 
 # Overfitting
-
-![a](./assets/d0c21cb0.png)
-
-halo
