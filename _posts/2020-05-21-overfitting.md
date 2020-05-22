@@ -42,12 +42,12 @@ use_math: true
 
 ## 해결 방안
 
-1. Reduce the number of features
+**1. Reduce the number of features**
 
 - 불필요한 feature($x_{i}$)을 제외시켜 개수를 줄임
 - Model selection algorithm 사용
 
-2. Regularization
+**2. Regularization**
 
 - 정규화를 통해 $\theta_{i}$의 범위를 줄임
 - feature의 개수를 줄일 필요가 없음
