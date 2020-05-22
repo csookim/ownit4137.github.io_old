@@ -1,10 +1,7 @@
 ![image](/home.jpg)
 
-# ownit4137.github.io
+# [ownit4137.github.io](https://ownit4137.github.io)
 
-INHA U CSE
+INHA U CSE 📌19
 
 thanks to Tarada-Dante, Minimal-mistakes
-
-👉[My Blog](https://ownit4137.github.io)
-
