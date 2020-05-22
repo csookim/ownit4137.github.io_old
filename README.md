@@ -6,7 +6,5 @@ INHA U CSE
 
 thanks to Tarada-Dante, Minimal-mistakes
 
+👉[My Blog](https://ownit4137.github.io)
 
-[Blog]("ownit4137.github.io", "My Blog") 
-
-<https://www.google.com>
