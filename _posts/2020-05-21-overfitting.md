@@ -43,9 +43,48 @@ use_math: true
 ## 해결 방안
 
 1. Reduce the number of features
-  - 불필요한 feature($x_{i}$)을 제외시켜 개수를 줄임
-  - Model selection algorithm 사용
+- 불필요한 feature($x_{i}$)을 제외시켜 개수를 줄임
+- Model selection algorithm 사용
 
 2. Regularization
-  - 정규화를 통해 $\theta_{i}$의 범위를 줄임
-  - feature의 개수를 줄일 필요가 없음
+- 정규화를 통해 $\theta_{i}$의 범위를 줄임
+- feature의 개수를 줄일 필요가 없음
+
+
+## Penalize
+
+- 비용 함수의 식에다 $\theta_{i}$와 관련된 식을 더해 주어 overfit을 줄일 수 있음
+- $J(\theta) = j(\theta) + \frac{ \lambda }{2m} \sum_{j=1}^n {\theta_{j}}^2 $
+- 미분의 편의를 위해 $2m$으로 나눠 줌
+- extra summation에 \theta_{0}은 포함되지 않음
+- Learning rate $\alpha$와 유사하게 Regularization Parameter인 $\lambda$를 정해주어야 함
+
+
+The $\lambda$ is regularization parameter. It determines how much the costs of our theta parameters are inflated. Using the above cost function with the extra summation, we can **smooth the output of our hypothesis function to reduce overfitting.**
+{: .notice--info}
+
+
+## Regularized Linear Regression
+
+### Cost function
+
+- $J(\theta) = \frac{1}{2m}\sum_{i=1}^{m}\left(h_\theta({x}^{(i)})-{y}^{(i)} \right)^2 + \frac{ \lambda }{2m} \sum_{j=1}^n {\theta_{j}}^2$
+
+### Gradient Descent
+
+![](/assets/posts/ml/ed140536.png)
+
+### Normal Equation
+
+![](/assets/posts/ml/05cdd2a2.png)
+
+
+## Regularized Logistic Regression
+
+### Cost function
+
+- $J( \theta )= -\frac{1}{m}  \sum_{i=1}^m [y^{(i)}\log(h_{\theta}(x^{(i)}))+(1-y^{(i)})\log(1-h_{\theta}(x^{(i)}))]  + \frac{ \lambda }{2m} \sum_{j=1}^n {\theta_{j}}^2 $
+
+### Gradient Descent
+
+![](/assets/posts/ml/dc0efbd3.png)
