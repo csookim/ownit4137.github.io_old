@@ -19,3 +19,33 @@ use_math: true
 > Machine Learning by Andrew Ng WEEK 3
 
 # Overfitting
+
+## 정의
+
+- 과적합
+- 가설 함수의 항이 과하게 많아질수록 그래프에 불필요한 curve가 많아짐
+
+![of](/assets/posts/ml/overfit01.jpg)
+
+그래프 1
+  - Underfit, High bias
+  - 그래프가 강한 편향을 가지고 있음(데이터의 분포와 거리가 먼 개형)
+
+그래프 2
+  - 그래프가 데이터를 적절히 표현
+
+그래프 3
+  - **Overfit** , High variance
+  - 그래프의 변동성이 큼
+  - 새로운 예제가 들어올 경우 일반화된 예측을 하지 못할 수 있음
+
+
+## 해결 방안
+
+1. Reduce the number of features
+  - 불필요한 feature($x_{i}$)을 제외시켜 개수를 줄임
+  - Model selection algorithm 사용
+
+2. Regularization
+  - 정규화를 통해 $\theta_{i}$의 범위를 줄임
+  - feature의 개수를 줄일 필요가 없음
