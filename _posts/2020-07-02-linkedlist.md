@@ -50,10 +50,10 @@ private:
 
 - addFront(int x) : newNode 생성 -> 연결
 - addBack(int x) : newNode 생성 -> 연결
-- removeFront : head 노드를 old 노드에 복사 -> 연결 끊기 -> delete
+- removeFront() : head 노드를 old 노드에 복사 -> 연결 끊기 -> delete
 - front() : return head->elem;
 - empty() : return head==NULL;
-- showList : do traverse using cur pointer
+- showList() : do traverse using cur pointer
 
 {% highlight cpp %}
 
@@ -106,3 +106,95 @@ public:
 ## Doubly Linked List
 
 ## Circular Linked List
+
+### class Node
+
+{% highlight cpp %}
+
+class Node {
+public:
+	Node(int e) {
+		elem = e;
+		this->next = NULL;
+	}
+private:
+	int elem;
+	Node* next;
+
+	friend class CLinkedList;
+};
+
+{% endhighlight %}
+
+
+### class CLinkedList
+
+- addFront() : newNode 생성 -> 연결
+- addBack() : newNode 생성 -> 연결
+- remove(int idx) : 삭제할 노드와 **그 전 노드** 를 가리킴 -> head/tail 갱신 -> 연결 -> 삭제
+- showList() : do traverse, p가 tail이면 반복문 종료
+
+{% highlight cpp %}
+
+class CLinkedList {
+public:
+	CLinkedList() {
+		head = NULL;
+		tail = NULL;
+	}
+	void addFront(int x) {
+		Node* newNode = new Node(x);
+		if (empty()) {
+			head = newNode;
+			tail = newNode;
+			newNode->next = head;
+		}
+		else {
+			newNode->next = head;
+			tail->next = newNode;
+			head = newNode;
+		}
+	}
+	void addBack(int x) {
+		Node* newNode = new Node(x);
+		if (empty()) {
+			head = newNode;
+			tail = newNode;
+			newNode->next = head;
+		}
+		else {
+			newNode->next = head;
+			tail->next = newNode;
+			tail = newNode;
+		}
+	}
+	void remove(int idx) {
+		Node* old = head;
+		Node* prev = tail;
+		for (int id = 0; id < idx; id++) {
+			old = old->next;
+			prev = prev->next;
+		}
+		if (old == head) head = old->next;
+		if (old == tail) tail = prev;
+		prev->next = old->next;
+		delete old;
+	}
+	void showList() {
+		for (Node* p = head;; p = p->next) {
+			cout << p->elem << " ";
+			if (p == tail) break;
+		}
+	}
+	int empty() { return head == NULL; }
+private:
+	Node* head;
+	Node* tail;
+};
+
+{% endhighlight %}
+
+
+
+삽입을 구현할 때, 빈 리스트(head == NULL or tail == NULL)는 따로 처리
+{: .notice}
