@@ -18,7 +18,7 @@ toc_sticky: true # 스크롤 내릴때 같이 내려가는 목차
 
 
 ![](/assets/posts/al/aafb2884.png)
-<span class="srclink">https://medium.com/x-organization/stack-and-queue-60f365963552</span>
+<br><span class="srclink">https://medium.com/x-organization/stack-and-queue-60f365963552</span>
 
 
 ## Stack
@@ -59,7 +59,7 @@ public:
 
 ### class linkedStack(linkedlist)
 
-- 만들어놓은 linkedlist ADT를 사용
+- 만들어놓은 SLinkedList ADT를 사용
 - front(head)에서 push, pop이 일어남
 - n은 스택의 원소 개수를 나타냄
 
