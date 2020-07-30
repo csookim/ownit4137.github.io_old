@@ -48,6 +48,8 @@ figure.highlight {
   }
 
   pre {
+    tab-size: 2;
+    -moz-tab-size: 2;
     margin: 0;
   }
 }
@@ -321,4 +323,9 @@ figure.highlight {
   th, td {
     border-bottom: 0;
   }
+}
+
+pre {
+  tab-size: 2;
+  -moz-tab-size: 2;
 }
