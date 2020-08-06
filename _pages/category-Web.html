@@ -1,13 +1,13 @@
 ---
 layout: default
-permalink: /categories/webhacking
-title: "Webhacking"
+permalink: /categories/web
+title: "Web"
 author_profile: false
 ---
 <div class="page__hero--overlay">
     <div class="wrapper">
-        <h1><i class="fas fa-laptop-code" style="color:darkgray"></i> Posts about Webhacking</h1>
-        <p class="categoryDescription"> Web-application Hacking</p>
+        <h1><i class="fas fa-laptop-code" style="color:darkgray"></i> Posts about Web</h1>
+        <p class="categoryDescription"> Webhacking, Crawling</p>
     </div>
 </div>
 
@@ -15,14 +15,14 @@ author_profile: false
     {% include ownit-sidebar.html %}
     <div class="archive">
         {% comment %}{% comment %} Page title {% endcomment %}
-        <h1><i class="fas fa-laptop-code" style="color:darkgray"></i> Posts about Webhacking</h1>
-        <p style="font-size: 13px;"> Web-application Hacking</p>
+        <h1><i class="fas fa-laptop-code" style="color:darkgray"></i> Posts about Web</h1>
+        <p style="font-size: 13px;"> Webhacking, Crawling</p>
         {% comment %} Page title {% endcomment %}{% endcomment %}
 
         {% comment %} Main content {% endcomment %}
         {% include group-by-array collection=site.posts field="categories" %}
         {% for category in group_names %}
-        {% if category == "Webhacking" %}
+        {% if category == "Web" %}
         {% assign posts = group_items[forloop.index0] %}
         <h2 id="{{ category | slugify }}" class="archive__subtitle">{{ category }}</h2>
         {% for post in posts %}
