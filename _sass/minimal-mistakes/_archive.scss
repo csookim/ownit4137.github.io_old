@@ -86,7 +86,6 @@
 }
 
 .archive__item-teaser {
-  width:50%;
   position: relative;
   border-radius: $border-radius;
   overflow: hidden;
@@ -95,6 +94,8 @@
     width: 100%;
   }
 }
+
+
 
 .archive__item-caption {
   position: absolute;
