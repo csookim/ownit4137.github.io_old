@@ -107,11 +107,11 @@ social:
 # 설정 필요
 
 
-# Analytics  제거완
+# Analytics
 analytics:
-  provider: # false (default), "google", "google-universal", "custom"
+  provider: "google-gtag" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id:
+    tracking_id: "UA-174970129-1"
     anonymize_ip: # true, false (default)
 
 # Site Author
@@ -124,7 +124,7 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: mailto:ownit4137@naver.com
+      url: mailto:kcs120727@gmail.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
