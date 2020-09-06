@@ -1,6 +1,6 @@
 [Modify Category]
 
 - ownit-sidebar.html
-- _pages/*
+- _pages/* create 1 modify 1
 - _includes/footer/custom.html  # ICON
 - _images/teaser/category # 640x426
