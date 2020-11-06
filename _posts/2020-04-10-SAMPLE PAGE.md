@@ -33,33 +33,18 @@ city:
 money: true
 ---
 
+
 https://raw.githubusercontent.com/ownit4137/ownit4137.github.io/master
 
 <!--Language Button HTML -->
 
-<span><a class="PHP"><i class="fab fa-php"></i> PHP</a><a class="PHPver">7.0</a></span>
+<span><span class="Python"><i class="fab fa-python"></i> Python</span><span class="PythonVer">3.7.4</span></span>
 
-<span><a class="Python"><i class="fab fa-python"></i> Python</a><a class="PythonVer">3.7.4</a></span>
+<span><span class="Sklearn"><i class="fas fa-chalkboard"></i> scikit-learn</span><span class="SklearnVer">0.22.2</span></span>
 
-<span><a class="HTML"><i class="fab fa-html5"></i> HTML</a><a class="HTMLVer">5</a></span>
+<span><span class="Jekyll"><i class="fab fa-github"></i> Jekyll</span><span class="JekyllVer">4.0.0</span></span>
 
-<span><a class="CSS"><i class="fab fa-css3-alt"></i> CSS</a><a class="CSSVer">3</a></span> <br>
-
-<span><a class="Javascript"><i class="fab fa-js-square"></i> Javascript</a><a class="Javascriptver">ES8</a></span>
-
-<span><a class="MySQL"><i class="fas fa-server"></i> MySQL</a><a class="MySQLVer">8.0</a></span>
-
-<span><a class="Windows"><i class="fab fa-windows"></i> Windows</a><a class="WindowsVer">10</a></span>
-
-<span><a class="Jekyll"><i class="fab fa-github"></i> Jekyll</a><a class="JekyllVer">4.0.0</a></span>
-
-<span><a class="YAML"><i class="fab fa-yammer"></i> YAML</a><a class="YAMLVer">1.2</a></span>
-
-<span><a class="Liquid"><i class="fas fa-flask"></i> Liquid</a><a class="LiquidVer">4.0.0</a></span>
-
-<span><a class="jQuery"><i class="fab fa-ravelry"></i> jQuery</a><a class="jQueryVer">3.2.1</a></span>
-
-<span><a class="Markdown"><i class="fab fa-markdown"></i> Markdown</a><a class="MarkdownVer">1.0.1</a></span>
+<span><span class="Markdown"><i class="fab fa-markdown"></i> Markdown</span><span class="MarkdownVer">1.0.1</span></span>
 <!--Language Button HTML -->
 <!-- Main content-->
 
