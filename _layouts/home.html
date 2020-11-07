@@ -4,8 +4,65 @@ layout: archive
 
 <!-- 홈 화면 -->
 
-<img src="/home.jpg" alt="background">
+<script>
+var oldX = 0;
+var oldY = 0;
+var bodyElement = document.querySelector("html");
+bodyElement.addEventListener("mousemove", getMouseDirection, false);
 
+window.onload = function(){
+  var zzangpar = document.getElementById("bgr").getBoundingClientRect();
+  var zzangpos = document.getElementById('floating').style;
+
+  zzangpos.left = (zzangpar.width / 2) + "px";
+  zzangpos.top = (zzangpar.height / 2) + "px";
+}
+
+function getMouseDirection(e) {
+  zzangpos = document.getElementById('floating').style;
+
+  if (oldX + 10 < e.pageX) {
+      zzangpos.left = (parseInt(zzangpos.left) + 3) + "px";
+  } else if (oldX - 10 > e.pageX) {
+      zzangpos.left = (parseInt(zzangpos.left) - 3) + "px";
+  }
+
+  if (oldY + 3 < e.pageY) {
+      zzangpos.top = (parseInt(zzangpos.top) + 1) + "px";;
+  } else if (oldY - 3> e.pageY) {
+      zzangpos.top = (parseInt(zzangpos.top) - 1) + "px";
+  }
+
+  console.log("hello");
+
+  oldX = e.pageX;
+  oldY = e.pageY;
+}
+</script>
+
+<style>
+      .img_home{
+        position: relative;
+      }
+      #bgr{
+        width:100%;
+      }
+      #floating{
+        width:10%;
+        position: absolute;
+        top: 50%;
+  	    left: 50%;
+  	    transform: translate( -50%, -50% );
+        border-radius: 30%;
+        z-index: 3;
+      }
+</style>
+
+
+<div class="img_home">
+    <img id="floating" src = "/assets/zzn.png"></img>
+    <img id="bgr" src = "/assets/universe.jpg" alt="background">
+</div>
 {{ content }}
 
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
