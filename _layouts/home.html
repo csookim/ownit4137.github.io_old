@@ -19,21 +19,21 @@ window.onload = function(){
 }
 
 function getMouseDirection(e) {
-  zzangpos = document.getElementById('floating').style;
+  var zzangpos = document.getElementById('floating').style;
+  var zzangleft = parseInt(zzangpos.left);
+  var zzangtop = parseInt(zzangpos.top)
 
-  if (oldX + 10 < e.pageX) {
-      zzangpos.left = (parseInt(zzangpos.left) + 3) + "px";
-  } else if (oldX - 10 > e.pageX) {
-      zzangpos.left = (parseInt(zzangpos.left) - 3) + "px";
+  if (oldX < e.pageX) {
+      zzangpos.left = (zzangleft + 2) + "px";
+  } else if (oldX > e.pageX) {
+      zzangpos.left = (zzangleft - 2) + "px";
   }
 
-  if (oldY + 3 < e.pageY) {
-      zzangpos.top = (parseInt(zzangpos.top) + 1) + "px";;
-  } else if (oldY - 3> e.pageY) {
-      zzangpos.top = (parseInt(zzangpos.top) - 1) + "px";
+  if (oldY < e.pageY) {
+      zzangpos.top = (zzangtop + 2) + "px";;
+  } else if (oldY > e.pageY) {
+      zzangpos.top = (zzangtop - 2) + "px";
   }
-
-  console.log("hello");
 
   oldX = e.pageX;
   oldY = e.pageY;
@@ -47,7 +47,9 @@ function getMouseDirection(e) {
       #bgr{
         width:100%;
       }
-      #floating{
+      #floating {
+        -webkit-transition: none;
+        transition: none;
         width:10%;
         position: absolute;
         top: 50%;
