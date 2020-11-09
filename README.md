@@ -4,4 +4,4 @@ INHA U CSE 📌19
 
 Write TILs ✍
 
-<span style="font-size:8px;color:gray">powered by Minimal-Mistakes, Terada</span>
+powered by Minimal-Mistakes, Terada
