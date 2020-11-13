@@ -1,8 +1,8 @@
 ---
-title: "scikit-learn practice 02"
+title: "[Exercise] scikit-learn 02"
 date: 2020-11-08
 categories: "MachineLearning" # 카테고리
-excerpt: "sklearn practice using colab"
+excerpt: "sklearn exercises using colab"
 published : true # 공개
 
 author_profile: false

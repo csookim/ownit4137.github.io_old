@@ -1,13 +1,13 @@
 ---
-title: "pandas practice 01"
-date: 2020-11-09
+title: "[Exercise] scikit-learn 01"
+date: 2020-11-06
 categories: "MachineLearning" # 카테고리
-excerpt: "pandas practice with titanic using kaggle"
+excerpt: "sklearn exercises using colab"
 published : true # 공개
 
 author_profile: false
 header:
-  teaser: "/assets/images/teaser/kaggle.png"
+  teaser: "/assets/images/teaser/sklearn.png"
 
 
 toc: false #Table Of Contents 목차 보여줌
@@ -17,32 +17,20 @@ toc_sticky: true # 스크롤 내릴때 같이 내려가는 목차
 use_math: false # mathjax
 ---
 
-# Titanic: Machine Learning from Disaster
+# scikit-learn
 
-# Pandas
+## 내용
 
-## Dataframe
+### iris dataset
 
-### Dataframe 정보
+### 데이터 -> 학습 -> 예측 -> 성능 평가
 
-- head(), shape, info()
-- value_counts()
+### 교차 검증(KFold, StratifiedKFold)
 
-### 칼럼 추가, 삭제
+### cross_val_score()
 
-- drop()
+### GridSearchCV
 
-### 인덱스 객체, 연산
-
-## 탐색
-
-### 인덱싱
-
-- [], loc(), iloc(), 불린 인덱싱,
-
-## GroupBy
-
-## NaN처리
 
 {% if page.toc == false %}
 <style>
@@ -53,8 +41,9 @@ use_math: false # mathjax
 {% endif %}
 
 <span><span class="Python"><i class="fab fa-python"></i> Python</span><span class="PythonVer">3.6.9</span></span>&nbsp;&nbsp;
+<span><span class="Sklearn"><i class="fas fa-chalkboard"></i> scikit-learn</span><span class="SklearnVer">0.22.2</span></span>
 
-<script src="https://gist.github.com/ownit4137/53c8749e8300ec211f3672f482624f6a.js"></script>
+<script src="https://gist.github.com/ownit4137/607606ed1d3d244fb9370420328a4de8.js"></script>
 
 <style>
 .gist iframe.render-viewer{
