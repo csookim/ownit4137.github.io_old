@@ -1,6 +1,6 @@
 # [ownit4137.github.io](https://ownit4137.github.io)
 
-INHA U CSE 📌19
+Inha Univ. 📌19 CSE
 
 Write TILs ✍
 
